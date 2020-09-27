@@ -1,0 +1,11 @@
+<layout-header (eventEmitterToggleLeftSideBar)="handleToggleLeftSideBar($event)"></layout-header>
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="_leftsidebarOpen">
+     <layout-left-sidebar></layout-left-sidebar>
+    </mat-drawer>
+    <!-- <mat-drawer-content>
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
+    </mat-drawer-content> -->
+</mat-drawer-container>
+
+<layout-footer></layout-footer>
