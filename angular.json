@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -125,13 +126,13 @@
             "production": {
               "browserTarget": "start-app:build:production"
             },
-            "qa":{
+            "qa": {
               "browserTarget": "start-app:build:qa"
             },
-            "staging":{
+            "staging": {
               "browserTarget": "start-app:build:staging"
             },
-            "local":{
+            "local": {
               "browserTarget": "start-app:build:local"
             }
           }
@@ -154,6 +155,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
