@@ -1,0 +1,6 @@
+*.html linguist-detectable=false
+*.htm inguist-detectable=false
+*.json inguist-detectable=false
+*.css inguist-detectable=false
+*.less inguist-detectable=false
+*.scss inguist-detectable=false
