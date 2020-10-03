@@ -2,9 +2,23 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { IOidcSettings } from 'src/app/_common/_oidc';
+
 export const environment = {
   production: false,
-  name:"local"
+  name: "local",
+  oidcSettings: <IOidcSettings>{
+    autoSilentRenew: true,
+    stsAuthority: 'http://localhost:5000/',
+    clientId: 'ng',
+    clientRoot: 'http://localhost:4200/',
+    responseType: 'code',
+    clientScope: 'openid profile api1',
+    redirectUri: "http://localhost:4200/oidc/signin-callback.html",
+    postLogoutUri: "http://localhost:4200/",
+    slientRedirectUri: "http://localhost:4200/oidc/silent-callback.html",
+    enabled: true
+  }
 };
 
 /*

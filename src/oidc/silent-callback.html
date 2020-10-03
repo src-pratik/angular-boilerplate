@@ -1,0 +1,10 @@
+<script src="oidc-client.min.js"></script>
+<script>
+    var mgr = new Oidc.UserManager();
+    console.log("Slient Callback");
+    mgr.signinSilentCallback().catch(function (x) {
+        console.log(x);
+    }, error => {
+        console.error(error);
+    });
+</script>
