@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   _leftsidebarOpen: boolean = true;
-  constructor(private httpClient: HttpClient) { }
+  environmentName = '';
+  appVersion = "";
+  constructor(private httpClient: HttpClient) {
+    this.environmentName = environment.name;
+    this.appVersion = environment.appVersion;
+  }
 
   ngOnInit(): void {
   }

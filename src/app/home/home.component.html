@@ -1,8 +1,15 @@
 <layout-header (eventEmitterToggleLeftSideBar)="handleToggleLeftSideBar($event)"></layout-header>
 <mat-drawer-container>
     <mat-drawer mode="side" [opened]="_leftsidebarOpen">
-     <layout-left-sidebar></layout-left-sidebar>
+        <layout-left-sidebar></layout-left-sidebar>
     </mat-drawer>
+
+    The application is running !!!
+    <br />
+    Environment : {{environmentName}}
+
+    <br />
+    Version : {{appVersion}}
 
     <button type="button" (click)="onClick()">Test Interceptor</button>
     <!-- <mat-drawer-content>
