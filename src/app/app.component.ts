@@ -9,11 +9,12 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title = 'start-app';
   environmentName = '';
+  appVersion = "";
 
   constructor(private httpClient: HttpClient) {
     this.environmentName = environment.name;
+    this.appVersion = environment.appVersion;
   }
-
   onClick() {
     this.httpClient.get("http://dummyhost.xyz/").subscribe(data => { }, err => { });
   }

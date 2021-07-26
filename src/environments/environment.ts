@@ -5,6 +5,7 @@
 import { IOidcSettings } from 'src/app/_common/_oidc';
 
 export const environment = {
+  appVersion: require('../../package.json').version,
   production: false,
   name: "local",
   oidcSettings: <IOidcSettings>{
