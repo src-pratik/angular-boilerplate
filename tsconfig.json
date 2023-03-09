@@ -8,6 +8,11 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "paths": {
+      "lib-loader": [
+        "dist/lib-loader"
+      ]
+    },
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
